@@ -27,12 +27,38 @@ public interface PotPlayer {
     void speedDown();
     void speedNormal();
     void fullscreen();
+    /**
+     * @return current volume 0-100
+     */
     int getVolume();
+    /**
+     * @param volume volume 0-100
+     */
     void setVolume(int volume);
+    /**
+     * @return total time in ms
+     */
     long getTotalTime();
+    /**
+     * @return progress time in ms
+     */
     long getProgressTime();
+    /**
+     * @return current time in ms
+     */
     long getCurrentTime();
+
+    /**
+     * Set current time value
+     *
+     * @param  time in ms
+     */
     void setCurrentTime(long time);
     PlayStatus getPlayStatus();
+    /**
+     * Send key press by KeyCode
+     *
+     * @param  key key code
+     */
     void sendVirtualKey(int key);
 }
