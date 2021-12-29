@@ -16,7 +16,7 @@ Simply add the dependency to gradle/maven to the latest release:
 
 ## Usage
 
-### Create PotPlayer instanse
+### Create PotPlayer instance
 
 Find all PotPlayer windows:
 ```
