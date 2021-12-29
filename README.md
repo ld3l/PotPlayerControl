@@ -36,7 +36,7 @@ Window window = allPotPlayerWindows.get(0);
 PotPlayer player = new JNAPotPlayer(window);
 ```
 
-### Usage
+## Player commands examples
 
 ```
         player.pause();
