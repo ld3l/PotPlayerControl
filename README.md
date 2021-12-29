@@ -30,7 +30,7 @@ Predicate<Window> filter = window -> window.getWindowText().startsWith("PotPlaye
 List<Window> allPotPlayerWindows = JNAPotPlayerHelper.getAllPlayerWindows(filter);
 ```
 
-Select the necessary and create PotPlayer instanse:
+Select the necessary and create PotPlayer instance:
 ```
 Window window = allPotPlayerWindows.get(0);
 PotPlayer player = new JNAPotPlayer(window);
