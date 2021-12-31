@@ -64,12 +64,12 @@ PotPlayer player = new JNAPotPlayer(window);
         player.speedNormal();
         player.fullscreen();
         player.setVolume(6);
-        Slayerystem.out.println(p.getVolume());
-        Slayerystem.out.println(p.getTotalTime());
-        Slayerystem.out.println(p.getCurrentTime());
-        Slayerystem.out.println(p.getProgressTime());
+        System.out.println(p.getVolume());
+        System.out.println(p.getTotalTime());
+        System.out.println(p.getCurrentTime());
+        System.out.println(p.getProgressTime());
         player.setCurrentTime(5522255);
-        Slayerystem.out.println(p.getPlayStatus());
+        System.out.println(p.getPlayStatus());
         player.sendVirtualKey(Win32VK.VK_SPACE.code);
 ```
 
