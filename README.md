@@ -72,4 +72,4 @@ PotPlayer player = new JNAPotPlayer(window);
         Slayerystem.out.println(p.getPlayStatus());
         player.sendVirtualKey(Win32VK.VK_SPACE.code);
 ```
-
+If you did not find the necessary functionality, then you can pay attention to the JNAMessageConst file, which also contains unimplemented commands
