@@ -16,7 +16,7 @@ Simply add the dependency to gradle/maven to the latest release:
 
 ## Usage
 
-### Create PotPlayer instanse
+### Create PotPlayer instance
 
 Find all PotPlayer windows:
 ```
@@ -30,13 +30,13 @@ Predicate<Window> filter = window -> window.getWindowText().startsWith("PotPlaye
 List<Window> allPotPlayerWindows = JNAPotPlayerHelper.getAllPlayerWindows(filter);
 ```
 
-Select the necessary and create PotPlayer instanse:
+Select the necessary and create PotPlayer instance:
 ```
 Window window = allPotPlayerWindows.get(0);
 PotPlayer player = new JNAPotPlayer(window);
 ```
 
-### Usage
+## Player commands examples
 
 ```
         player.pause();
@@ -64,12 +64,12 @@ PotPlayer player = new JNAPotPlayer(window);
         player.speedNormal();
         player.fullscreen();
         player.setVolume(6);
-        Slayerystem.out.println(p.getVolume());
-        Slayerystem.out.println(p.getTotalTime());
-        Slayerystem.out.println(p.getCurrentTime());
-        Slayerystem.out.println(p.getProgressTime());
+        System.out.println(p.getVolume());
+        System.out.println(p.getTotalTime());
+        System.out.println(p.getCurrentTime());
+        System.out.println(p.getProgressTime());
         player.setCurrentTime(5522255);
-        Slayerystem.out.println(p.getPlayStatus());
+        System.out.println(p.getPlayStatus());
         player.sendVirtualKey(Win32VK.VK_SPACE.code);
 ```
 If you did not find the necessary functionality, then you can pay attention to the JNAMessageConst file, which also contains unimplemented commands
