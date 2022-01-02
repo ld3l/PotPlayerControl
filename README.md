@@ -10,7 +10,7 @@ Simply add the dependency to gradle/maven to the latest release:
         <dependency>
             <groupId>com.ld3l</groupId>
             <artifactId>potplayercontrol</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 ```
 
@@ -72,4 +72,12 @@ PotPlayer player = new JNAPotPlayer(window);
         System.out.println(p.getPlayStatus());
         player.sendVirtualKey(Win32VK.VK_SPACE.code);
 ```
-If you did not find the necessary functionality, then you can pay attention to the JNAMessageConst file, which also contains unimplemented commands
+In addition, there is a list of additional commands that have not yet been implemented, but are already available using the following code
+```
+JNAPotPlayer.sendRawCommand(Window window, int winuser, int command, int value);
+```
+For example next comand set player opacity to 50%
+```
+JNAPotPlayer.sendRawCommand(window, 1045, 24004, 50);
+```
+You can find a complete list of raw commands [here](raw.md)
