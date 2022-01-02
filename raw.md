@@ -1,4 +1,7 @@
-###Full list of raw commands
+<p align="center">
+Full list of raw commands
+  </p>
+
 Winuser | command               | description 
 --- |-----------------------|-------------|
 273| 10000                 | open file - dialog
