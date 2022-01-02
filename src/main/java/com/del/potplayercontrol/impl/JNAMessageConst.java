@@ -53,8 +53,8 @@ public class JNAMessageConst {
    public static final int OPEN_PLAYLIST_PARAMETERS = 10002;
    public static final int OPEN_PREFERENCE = 10010;
    public static final int DISPLAY_AR_ASPECT_RATIO = 10015;
-   public static final int ORIGINAL_AR_ASPECT_RATIO = 10015;
-   public static final int FOUR_THIRD_AR_ASPECT_RATIO = 10015;
+   public static final int ORIGINAL_AR_ASPECT_RATIO = 10016;
+   public static final int FOUR_THIRD_AR_ASPECT_RATIO = 10017;
 //  10018  16:9
 //  10019  16:10
 //  10020  1.85:1
@@ -427,4 +427,9 @@ public class JNAMessageConst {
 // 24012 player HUE
 // 24013 player saturation
 // 24014-24024 control equalizer parameters (24 is system volume)
+
+// Additional winuser types without command codes:
+//517 1033 1034-35 1042
+//1044 - time aligment 1061-1064 1067-1069, 1084 - broadcast view etc
+//1089,1103,1128 window modes (full, windowed), open file etc
 }
