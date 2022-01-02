@@ -12,6 +12,14 @@ public class JNAPotPlayer implements PotPlayer {
     int COMMAND_TYPE = 273;
     int REQUEST_TYPE = 1024;
 
+    public static WinDef.LRESULT sendRawCommand(Window window, int winuser, int command, int value){
+        return sendRawCommand(window.getHwnd(),winuser,command,value);
+    }
+
+    public static WinDef.LRESULT sendRawCommand(WinDef.HWND hwnd, int winuser, int command, int value){
+        return User32.INSTANCE.SendMessage(hwnd, winuser, new WinDef.WPARAM(command),
+                new WinDef.LPARAM(value));
+    }
 
     public JNAPotPlayer(Window window) {
         this.window = window;
