@@ -418,4 +418,13 @@ public class JNAMessageConst {
 // 20011 - general menu
 // 20028 - playlist on / off
 // 20030 - full screen on / off
+
+// Other
+// WMPARAM - 1045
+// 24001 play from start
+// 24004 player opacity
+// 24011 player Contrast
+// 24012 player HUE
+// 24013 player saturation
+// 24014-24024 control equalizer parameters (24 is system volume)
 }
