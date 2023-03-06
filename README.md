@@ -3,8 +3,8 @@
 PotPlayerControl is an open source Java library for controlling PotPlayer. It provides an object-oriented abstraction over JNA.
 All java potplayer api commands were developed for x64 version of potplayer.
 ## Installation
-
-Simply add the dependency to gradle/maven to the latest release:
+1) Add github to your repository sources. Guide for: [Gradle](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry), [Maven](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)
+2) Simply add the dependency to gradle/maven to the latest release:
 
 ```
         <dependency>
