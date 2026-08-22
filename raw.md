@@ -39,6 +39,8 @@ Winuser | command               | description
 273| 10056                 | move frame down
 273| 10057                 | move frame to actual position
 273| 10058                 | set frame size to actual size
+273| 10059                 | play time navigation backward (←)
+273| 10060                 | play time navigation forward (→)
 273| 10067                 | open first video in playlist
 273| 10068                 | next video in playlist
 273| 10069                 | off playback shuffling
