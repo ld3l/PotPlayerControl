@@ -3,7 +3,7 @@ Full list of raw commands
   </p>
 
 Winuser | command               | description 
---- |-----------------------|-------------|
+--- |-----------------------|-------------
 273| 10000                 | open file - dialog
 273| 10009                 | volume normalization on / off
 273| 10010                 | player parameters
@@ -128,11 +128,12 @@ Winuser | command               | description
 273 | 10207                 | dialog: the explorer opens on the track being played
 273 | 10211                 | dialog: "Record name changes"
 273 | 10212                 | clear playlist
-273 | 10209,                |10213 - file deletion dialog
+273 | 10209                |10213 - file deletion dialog
 273 | 10218                 | remove color blocks on / off
 273 | 10220                 | output subtitles directly to the video
 273 | 10221                 | displaying subtitles on the VMR surface / EVR
 273 | 10222                 | dialog "Sequential saving of frames"
+273 | 10223 | get a picture of the source video that is currently playing to the clipboard 
 273 | 10225                 | dialog: explorer with the Capture folder
 273 | 10226                 | "Record audio" dialog
 273 | 10228                 | dialogue "Subtitle management"
@@ -154,10 +155,11 @@ Winuser | command               | description
 273 | 10246                 | playback speed 1x
 273 | 10247                 | playback speed -0.1x
 273 | 10248                 | playback speed + 0.1x
-273 | 10249                 | repeat the segment
-273 | 10250                 | repeat the segment
+273 | 10249                 | the start point of the A-B cycle 
+273 | 10250                 | the end point of the A-B cycle 
 273 | 10251                 | segment repeat canceled
 273 | 10252                 | segment repeat canceled
+273 | 10253 | cancel the A-B cycle 
 273 | 10256                 | sharpness on / off
 273 | 10257                 | blur on / off
 273 | 10260                 | automatic correction of levels on / off
@@ -350,6 +352,7 @@ Winuser | command               | description
 273 | 10583                 | "Rename file" dialog
 273 | 10587                 | maintain aspect ratio in video recording mode on / off
 273 | 10592                 | segment repeat canceled
+273 | 10595 | increase the number of A-B cycles 
 273 | 10602                 | pause and play (maybe something changes in the interface)
 273 | 10603                 | pause and play (maybe something changes in the interface)
 273 | 10604                 | pause and play (change slider)
